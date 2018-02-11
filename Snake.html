@@ -25,9 +25,10 @@
             this.height = r;
             this._grid = [];       //массив/список элементов с двумя координатами
             for (var x=0; x<c; x++){
-                this._grid.push([]);
+                var innerArray = [];
+                this._grid.push(innerArray);
                 for(var y=0; y<r; y++){
-                    this._grid[x].push(d);  //Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.
+                    innerArray.push(d);  //Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.
                 }
             }
 
